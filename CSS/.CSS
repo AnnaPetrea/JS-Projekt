@@ -1,3 +1,44 @@
 .css {
     background-color: #ede6d5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.burger-menu span {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.brand-name {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e67e22;
 }
