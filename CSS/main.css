@@ -190,6 +190,38 @@ body {
     flex: 1;
 }
 
+.image-container {
+    position: relative;
+    /* Gør det muligt at placere tekst absolut inden for containeren */
+    display: inline-block;
+    /* Bevarer billedets naturlige størrelse */
+}
+
+.image-text {
+    position: absolute;
+    /* Placerer teksten absolut i forhold til .image-container */
+    top: 50%;
+    /* Placering i midten lodret */
+    left: 50%;
+    /* Placering i midten vandret */
+    transform: translate(-50%, -50%);
+    /* Centrerer teksten præcist */
+    color: white;
+    /* Tekstfarve */
+    font-size: 20px;
+    /* Tekststørrelse */
+    font-weight: bold;
+    /* Fed tekst */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-gennemsigtig baggrund */
+    padding: 5px 10px;
+    /* Lidt padding rundt om teksten */
+    border-radius: 5px;
+    /* Afrundede hjørner */
+    pointer-events: none;
+    /* Sikrer, at teksten ikke blokerer klik på billedet */
+}
+
 
 /* Grundlæggende styling til footer */
 .footer {
