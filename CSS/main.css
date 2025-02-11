@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+body {
+    background-color: #ede6d5;
+    margin: 0;
+}
+
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ede6d5;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin: 20px;
+
+
+}
+
+
+/* Burger menu til venstre */
+.burger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    order: 1;
+    /* Placerer burger-menuen først */
+}
+
+
+/* Titel i midten */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    order: 2;
+}
+
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ede6d5;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+.burger-container {
+    display: flex;
+    align-items: center;
+    order: 1;
+}
+
+
+.burger-menu {
+    font-size: 34px;
+    cursor: pointer;
+    position: absolute;
+    margin-right: 10px;
+    font-family: 'K2D';
+}
+
+
+.text-menu {
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+
+.text-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 10 px;
+    font-family: 'K2D';
+}
+
+
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    order: 2;
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'K2D';
+    letter-spacing: 5px;
+
+
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    order: 3;
+}
+
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'K2D';
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #111729;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'K2D';
+    border: 2px solid #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.btn:hover {
+    background-color: #ece6d7;
+    color: #000000 !important;
+}
+
+
+
+
+/* Stort billede */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Kolonne med 3 billeder */
+.image-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.image-column img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    flex: 1;
+}
+
+
+.image-column2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    overflow: hidden;
+}
+
+
+.image-column2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    flex: 1;
+}
+
+
+/* Grundlæggende styling til footer */
+.footer {
+    background-color: #ece6d7;
+    /* Mørk baggrund */
+    color: #000000;
+    /* Hvid tekst */
+    padding: 40px 20px;
+    font-family: 'K2D';
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 75px;
+}
+
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+    padding: 30px;
+}
+
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00000062;
+    /* Understreget overskrift */
+    padding-bottom: 5px;
+}
+
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+
+
+
+/* Responsivt design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Skjuler links på mindre skærme */
+    }
+
+
+    .burger-menu {
+        display: block;
+        /* Viser burger-menuen på mindre skærme */
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+
+}
