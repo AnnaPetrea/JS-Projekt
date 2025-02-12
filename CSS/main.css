@@ -151,64 +151,42 @@ body {
 
 
 /* Kolonne med 3 billeder */
-.image-column {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-    padding-bottom: 0px;
-    gap: 25px;
-    overflow: hidden;
-}
-
-
-.image-column img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-    flex: 1;
-}
-
-
+.image-column,
 .image-column2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    padding-top: 25px;
-    gap: 25px;
+    padding: 20px;
+    gap: 20px;
     overflow: hidden;
 }
 
 
-.image-column2 img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
+.image-container {
+    position: relative;
     flex: 1;
 }
 
-.image-container {
-    position: relative;
-    display: inline-block;
+
+.image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
-.image-text {
+
+.image-title {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 70px;
+    left: 150px;
+    background-color: #ebe6d868;
     color: white;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
+    padding: 5px 20px;
     border-radius: 5px;
-    pointer-events: none;
+    font-size: 46px;
+    font-family: 'K2D';
 }
 
 
@@ -281,4 +259,67 @@ body {
     }
 
 
+}
+
+/*Pernilles JavaScript*/
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ece6d7;
+}
+
+
+body.dark-mode .navbar {
+    background-color: #1a1a1a;
+    color: #ece6d7;
+}
+
+
+body.dark-mode .text-menu a {
+    color: #ece6d7;
+}
+
+
+body.dark-mode .nav-links a {
+    color: #ece6d7;
+}
+
+
+body.dark-mode .btn {
+    background-color: #ece6d7;
+    color: #000000 !important;
+    border-color: #ece6d7;
+    padding: 5px 5px;
+    font-family: 'K2D';
+}
+
+
+body.dark-mode .btn:hover {
+    background-color: #555;
+    color: #ece6d7 !important;
+}
+
+
+body.dark-mode .footer {
+    background-color: #1a1a1a;
+    color: #ece6d7;
+}
+
+
+body.dark-mode .footer-section h3 {
+    border-bottom-color: #ece6d762;
+}
+
+
+#dark-mode-toggle {
+    background: none;
+    border: 2px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: transform 0.3s ease;
+}
+
+
+#dark-mode-toggle:hover {
+    transform: scale(1.2);
 }
