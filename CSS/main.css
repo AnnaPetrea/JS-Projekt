@@ -328,8 +328,10 @@ body.dark-mode .footer-section h3 {
     border: 2px;
     font-size: 24px;
     cursor: pointer;
-    padding: 5px 5px;
+    padding: 6px 5px;
     transition: transform 0.3s ease;
+    position: absolute;
+    right: 1350px;
 }
 
 
