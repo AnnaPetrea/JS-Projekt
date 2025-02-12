@@ -151,65 +151,56 @@ body {
 
 
 /* Kolonne med 3 billeder */
-.image-column {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-    padding-bottom: 0px;
-    gap: 25px;
-    overflow: hidden;
-}
-
-
-.image-column img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-    flex: 1;
-}
-
-
+.image-column,
 .image-column2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    padding-top: 25px;
-    gap: 25px;
+    padding: 20px;
+    gap: 20px;
     overflow: hidden;
-}
-
-
-.image-column2 img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-    flex: 1;
 }
 
 .image-container {
     position: relative;
-    display: inline-block;
+    flex: 1;
+    max-width: 33%;
+    /* Giver containerne en specifik størrelse */
 }
 
-.image-text {
+.image-container img {
+    width: 100%;
+    /* Sørger for, at billederne fylder containeren */
+    height: 300px;
+    /* Øger billedhøjden */
+    object-fit: cover;
+    /* Sørger for at billederne bevarer deres proportioner */
+    border-radius: 15px;
+}
+
+
+
+.image-title {
     position: absolute;
-    top: 50%;
+    top: 25%;
+    /* Centrerer vertikalt */
     left: 50%;
+    /* Centrerer horisontalt */
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* Justerer for at centrere korrekt */
+    /* background-color: #ebe6d8b3;  */
+    color: #ffffff;
     padding: 5px 10px;
     border-radius: 5px;
-    pointer-events: none;
+    font-size: 40px;
+    font-family: 'K2D';
+    font-weight: bold;
+    text-align: center;
+    /* Sikrer, at teksten er centreret inden i boxen */
 }
+
+
 
 
 /* Grundlæggende styling til footer */
@@ -281,4 +272,98 @@ body {
     }
 
 
+}
+
+/*Pernilles JavaScript*/
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ece6d7;
+}
+
+
+body.dark-mode .navbar {
+    background-color: #1a1a1a;
+    color: #ece6d7;
+}
+
+
+body.dark-mode .text-menu a {
+    color: #ece6d7;
+}
+
+
+body.dark-mode .nav-links a {
+    color: #ece6d7;
+}
+
+
+body.dark-mode .btn {
+    background-color: #ece6d7;
+    color: #000000 !important;
+    border-color: #ece6d7;
+    padding: 5px 5px;
+    font-family: 'K2D';
+}
+
+
+body.dark-mode .btn:hover {
+    background-color: #555;
+    color: #ece6d7 !important;
+}
+
+
+body.dark-mode .footer {
+    background-color: #1a1a1a;
+    color: #ece6d7;
+}
+
+
+body.dark-mode .footer-section h3 {
+    border-bottom-color: #ece6d762;
+}
+
+
+#dark-mode-toggle {
+    background: none;
+    border: 2px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 6px 5px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 1350px;
+}
+
+
+#dark-mode-toggle:hover {
+    transform: scale(1.2);
+}
+
+/* scroll up knap css */
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ece6d7;
+    color: #000000;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 28px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#backToTop:hover {
+    background-color: #121728;
+    color: #ece6d7;
+    transform: translateX(-50%) scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Even stronger shadow on hover */
 }

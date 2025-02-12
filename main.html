@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lagkagehuset</title>
     <link rel="stylesheet" href="CSS/main.css">
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/document.js"></script>
 </head>
 
 
 <body>
+    <button id="backToTop">⬆</button>
     <nav class="navbar">
         <div class="burger-menu">☰</div>
         <div class="text-menu">
-            <a href="#">Hjem</a>
+            <!-- <a href="#">Hjem</a>
             <a href="#">Om os</a>
             <a href="#">Services</a>
-            <a href="#">Kontakt</a>
+            <a href="#">Kontakt</a> -->
         </div>
         <!-- <div class="burger-tekst"></div> -->
 
@@ -27,6 +29,7 @@
         <ul class="nav-links">
             <li><a href="#">👤 Login</a></li>
             <li><a href="#" class="btn">Shop nu</a></li>
+            <li><button id="dark-mode-toggle">☾</button></li>
         </ul>
     </nav>
 
@@ -63,16 +66,34 @@
 
     <!-- Kolonne med 3 billeder -->
     <div class="image-column">
-        <img src="Images/fastelavnsboller.png" alt="billede af fastelavnboller">
-        <img src="Images/festkager.png" alt="billede af festkager">
-        <img src="Images/kaffe.png" alt="billede af kaffe">
+        <div class="image-container">
+            <img src="Images/fastelavnsboller.png" alt="billede af fastelavnboller">
+            <div class="image-title">FASTELAVN</div>
+        </div>
+        <div class="image-container">
+            <img src="Images/festkager.png" alt="billede af festkager">
+            <div class="image-title">FESTKAGER</div>
+        </div>
+        <div class="image-container">
+            <img src="Images/kaffe.png" alt="billede af kaffe">
+            <div class="image-title">KAFFE</div>
+        </div>
     </div>
 
 
     <div class="image-column2">
-        <img src="Images/vores app.png" alt="billede af lagkagehusets app">
-        <img src="Images/gavekort.png" alt="billede af morgenbrød">
-        <img src="Images/karriere.png" alt="billede af to unge medarbejdere der giver hinanden en high five">
+        <div class="image-container">
+            <img src="Images/vores app.png" alt="billede af lagkagehusets app">
+            <div class="image-title">VORES APP</div>
+        </div>
+        <div class="image-container">
+            <img src="Images/gavekort.png" alt="billede af morgenbrød">
+            <div class="image-title">GAVEKORT</div>
+        </div>
+        <div class="image-container">
+            <img src="Images/karriere.png" alt="billede af to unge medarbejdere der giver hinanden en high five">
+            <div class="image-title">KARRIERE</div>
+        </div>
     </div>
 
 
@@ -81,28 +102,32 @@
             <!-- Virksomhedsinformation -->
             <div class="footer-section">
                 <h3>Virksomhedsinformation</h3>
-                <p>Her kan du skrive information om virksomheden, f.eks. historie, mission eller vision.</p>
+                <p>Lagekagehuset A/S</p>
+                <p>Adresse: Dortheavej 10, DK - 2400 København NV</p>
+                <p>CVR-nr.: 20213094</p>
             </div>
 
             <!-- Kontakt os -->
             <div class="footer-section">
                 <h3>Kontakt os</h3>
-                <p>Adresse: 123 Firmavej, 8000 Aarhus</p>
-                <p>Telefon: +45 12 34 56 78</p>
-                <p>Email: info@virksomhed.dk</p>
+                <p>Whistleblowerordning</p>
+                <p>Donationer</p>
+                <p>Smiley Rapport</p>
             </div>
 
             <!-- Job og karriere -->
             <div class="footer-section">
                 <h3>Job og karriere</h3>
                 <p>Ledige stillinger og karrieremuligheder.</p>
-                <p>Send din ansøgning til: job@virksomhed.dk</p>
+                <p>Mød vores kollegaer</p>
+                <p>Hvem er vi</p>
             </div>
 
             <!-- Mere -->
             <div class="footer-section">
                 <h3>Mere</h3>
-                <p>Her kan du tilføje links til sociale medier, nyhedsbreve eller andre relevante oplysninger.</p>
+                <p>Presse</p>
+                <p>Årsrapport</p>
             </div>
         </div>
     </footer>
