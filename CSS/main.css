@@ -162,32 +162,45 @@ body {
     overflow: hidden;
 }
 
-
 .image-container {
     position: relative;
     flex: 1;
+    max-width: 33%;
+    /* Giver containerne en specifik størrelse */
 }
-
 
 .image-container img {
     width: 100%;
-    height: 200px;
+    /* Sørger for, at billederne fylder containeren */
+    height: 300px;
+    /* Øger billedhøjden */
     object-fit: cover;
+    /* Sørger for at billederne bevarer deres proportioner */
     border-radius: 15px;
 }
 
 
+
 .image-title {
     position: absolute;
-    top: 70px;
-    left: 150px;
-    background-color: #ebe6d868;
-    color: white;
-    padding: 5px 20px;
+    top: 25%;
+    /* Centrerer vertikalt */
+    left: 50%;
+    /* Centrerer horisontalt */
+    transform: translate(-50%, -50%);
+    /* Justerer for at centrere korrekt */
+    /* background-color: #ebe6d8b3;  */
+    color: #ffffff;
+    padding: 5px 10px;
     border-radius: 5px;
-    font-size: 46px;
+    font-size: 40px;
     font-family: 'K2D';
+    font-weight: bold;
+    text-align: center;
+    /* Sikrer, at teksten er centreret inden i boxen */
 }
+
+
 
 
 /* Grundlæggende styling til footer */
