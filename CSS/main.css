@@ -142,7 +142,8 @@ body {
 
 
 
-/* Stort billede
+/* Stort billede*/
+/*
 .hero-image img {
     width: 100%;
     height: auto;
@@ -152,16 +153,17 @@ body {
 
 
 /*slideshow Anna*/
-.mySlides{
+/*.mySlides{
     display: none;
-}
+} */
 img{
     vertical-align: middle;
+    height: 600px;
 }
 
 /*tilføj maks højde?*/
 .slideshow-container{
-    max-width: 80%;
+    width: 100%;
     position: relative;
     margin: auto;
 }
