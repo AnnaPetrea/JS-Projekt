@@ -338,3 +338,32 @@ body.dark-mode .footer-section h3 {
 #dark-mode-toggle:hover {
     transform: scale(1.2);
 }
+
+/* scroll up knap css */
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ece6d7;
+    color: #000000;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 28px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#backToTop:hover {
+    background-color: #121728;
+    color: #ece6d7;
+    transform: translateX(-50%) scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Even stronger shadow on hover */
+}
