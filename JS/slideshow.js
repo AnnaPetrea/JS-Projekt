@@ -1,10 +1,12 @@
 //Auto slide
+
+
 var slideIndex = 0;
 showSlides();
 
 function showSlides() {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = document.getElementsByClassName("slidesImg");
     for (i = 0; i < slides.length; i++) {
         slides [i].style.display = "none";
     }
@@ -16,3 +18,5 @@ function showSlides() {
     setTimeout(showSlides, 5000); 
     //change image every 5 seconds
 }
+
+
