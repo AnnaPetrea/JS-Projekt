@@ -30,6 +30,41 @@ body {
     /* Placerer burger-menuen først */
 }
 
+/*burger menu*/
+.burger-menu-items {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background: #ede6d5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    flex-direction: column;
+    z-index: 1000;
+    opacity: 85%;
+}
+
+.burger-menu-items.active {
+    display: flex;
+}
+
+.burger-menu-items a {
+    padding: 10px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-family: 'K2D', sans-serif;
+    transition: background 0.3s;
+}
+
+.burger-menu-items a:hover {
+    background: #d6c7b5;
+}
+
+.burger-menu.active+.burger-menu-items {
+    display: flex;
+}
 
 /* Titel i midten */
 .logo {
