@@ -188,48 +188,70 @@ body {
 
 
 /*slideshow Anna*/
+
+body {
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+    background-color: #ede6d5;
+}
+
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 500px;
-    /* Eller en passende højde til dit slideshow */
+    height: 600px;
     margin: auto;
+    overflow: hidden;
 }
 
 .slidesImg {
     display: none;
-    /* Skjuler alle billeder som standard */
     position: absolute;
-    /* Sikrer, at billederne ligger ovenpå hinanden */
     width: 100%;
     height: 100%;
-    /* Tilpasser højden til containeren */
+}
+
+.slidesImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .text {
-    color: beige;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 20px;
-    /* Placerer teksten lidt højere */
+    color: white;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.order-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #111729;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.order-btn:hover {
+    background-color: #333;
 }
 
 .fade {
-    animation-name: fade;
-    animation-duration: 3s;
+    animation: fade 3s;
 }
 
 @keyframes fade {
-    from {
-        opacity: 0.9;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0.8; }
+    to { opacity: 1; }
 }
 
 
@@ -251,11 +273,6 @@ body {
     }
 }
 */
-
-
-
-
-
 
 
 /* Kolonne med 3 billeder */
