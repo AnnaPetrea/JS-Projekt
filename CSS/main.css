@@ -42,6 +42,7 @@ body {
     width: 200px;
     flex-direction: column;
     z-index: 1000;
+    opacity: 85%;
 }
 
 .burger-menu-items.active {
@@ -61,7 +62,7 @@ body {
     background: #d6c7b5;
 }
 
-.burger-menu.active + .burger-menu-items {
+.burger-menu.active+.burger-menu-items {
     display: flex;
 }
 
